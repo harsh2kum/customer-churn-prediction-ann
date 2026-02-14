@@ -4,3 +4,5 @@ scikit-learn
 pandas
 numpy
 h5py
+karas
+scikeras
