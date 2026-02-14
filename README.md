@@ -10,11 +10,6 @@ The app provides real-time predictions with probability visualization and featur
 
 ---
 
-## 📸 App Preview
-![App Screenshot](assets/Churn Prediction.png)
-
----
-
 ## 📌 Project Overview
 
 Customer churn prediction is a critical business problem in the banking and telecom industries.  
