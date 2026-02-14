@@ -1,0 +1,15 @@
+.main {
+    background-color: #0e1117;
+}
+
+h1, h2, h3 {
+    color: #00c6ff;
+}
+
+.stButton>button {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    border-radius: 8px;
+    height: 3em;
+    width: 100%;
+}
