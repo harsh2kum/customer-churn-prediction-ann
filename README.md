@@ -1,176 +1,144 @@
-# 🚀 End-to-End Customer Churn Prediction using ANN
+# 💳 Customer Churn Prediction Web App
+
+An end-to-end machine learning web application that predicts whether a bank customer is likely to churn using a trained Artificial Neural Network (ANN).  
+The app provides real-time predictions with probability visualization and feature impact insights.
+
+---
+
+## 🚀 Live Demo
+👉 https://customer-churn-prediction-ann-gwwv56tbz6wpsp8nhgmfnc.streamlit.app/
+
+---
 
 ## 📌 Project Overview
 
-This project builds an **Artificial Neural Network (ANN)** model to predict customer churn using the Churn Modelling dataset.  
+Customer churn prediction is a critical business problem in the banking and telecom industries.  
+This project builds a deep learning model to identify customers at high risk of leaving, enabling proactive retention strategies.
 
-The objective is to identify customers who are likely to leave the bank, enabling businesses to take proactive retention actions.
+The project covers the full ML lifecycle:
 
-This project covers the complete machine learning lifecycle:
-
-- Data preprocessing
-- Feature encoding & scaling
-- Model building with TensorFlow/Keras
-- Hyperparameter tuning
-- Model evaluation
-- Deployment using Streamlit
-
----
-
-## 📊 Business Problem
-
-Customer churn is one of the biggest challenges for subscription-based businesses and banks.
-
-By predicting churn in advance, companies can:
-
-- Improve customer retention
-- Reduce revenue loss
-- Target high-risk customers with personalized strategies
+✔ Data preprocessing  
+✔ Feature engineering  
+✔ Model training using ANN  
+✔ Model evaluation  
+✔ Deployment using Streamlit  
+✔ Interactive dashboard with insights  
 
 ---
 
-## 🧠 Tech Stack
+## 🧠 Features
 
-- Python 3.11
-- TensorFlow / Keras
-- NumPy
-- Pandas
-- Scikit-learn
-- Streamlit
-- Pickle
-- Conda (Environment Management)
+- 🔮 Real-time churn prediction
+- 📊 Probability gauge visualization
+- 📈 Feature influence insights
+- ⚡ Fast inference using saved preprocessing pipeline
+- 🎨 Interactive modern UI
+- ☁️ Cloud deployable
+
+---
+
+## 🏗️ Tech Stack
+
+| Category | Tools |
+|----------|------|
+| Language | Python |
+| ML / DL | TensorFlow, Scikit-learn |
+| Data | Pandas, NumPy |
+| Visualization | Plotly |
+| Deployment | Streamlit |
+| Version Control | Git & GitHub |
 
 ---
 
 ## 📂 Project Structure
 
 ```
-.
-├── Churn_Modelling.csv
-├── experiments.ipynb
-├── hyperparametertuningann.ipynb
-├── prediction.ipynb
-├── salaryregression.ipynb
-│
-├── model.h5
-├── scaler.pkl
-├── label_encoder_gender.pkl
-├── onehot_encoder_geo.pkl
+customer-churn-prediction-ann/
 │
 ├── app.py
+├── model.h5
+├── scaler.pkl
+├── onehot_encoder_geo.pkl
+├── label_encoder_gender.pkl
 ├── requirements.txt
-└── README.md
+├── assets/
+│   └── style.css
+└── notebooks/
+    └── model_training.ipynb
 ```
 
 ---
 
-## 🔎 Data Preprocessing
+## ⚙️ Model Details
 
-- Removed irrelevant columns
-- Label Encoding (Gender)
-- One-Hot Encoding (Geography)
-- Feature Scaling using StandardScaler
-- Train-Test Split
+- Model Type: Artificial Neural Network (ANN)
+- Framework: TensorFlow / Keras
+- Problem Type: Binary Classification
+- Target Variable: Customer Churn (Yes / No)
 
----
+### Input Features
 
-## 🧠 Model Architecture
-
-- Input Layer
-- Hidden Dense Layers with ReLU activation
-- Output Layer with Sigmoid activation
-
-Loss Function:
-- Binary Crossentropy
-
-Optimizer:
-- Adam
-
-Evaluation Metric:
-- Accuracy
+- Credit Score  
+- Geography  
+- Gender  
+- Age  
+- Tenure  
+- Balance  
+- Number of Products  
+- Has Credit Card  
+- Is Active Member  
+- Estimated Salary  
 
 ---
 
-## 📈 Model Performance
+## 📊 Workflow
 
-- Binary Classification (Churn / No Churn)
-- Outputs churn probability
-- Evaluated on test dataset
-
-(Future improvement: Add confusion matrix & ROC-AUC score)
+1️⃣ Data Cleaning and preprocessing  
+2️⃣ Encoding categorical variables  
+3️⃣ Feature scaling  
+4️⃣ Training ANN model  
+5️⃣ Saving model + encoders  
+6️⃣ Building Streamlit UI  
+7️⃣ Deployment for real-time predictions  
 
 ---
 
-## ⚙️ How to Run the Project
-
-### 1️⃣ Clone the Repository
+## 🖥️ How to Run Locally
 
 ```bash
-git clone https://github.com/your-username/end-to-end-customer-churn-ann.git
-cd end-to-end-customer-churn-ann
-```
+# Clone repository
+git clone https://github.com/your-username/customer-churn-prediction-ann.git
 
----
+# Navigate to project
+cd customer-churn-prediction-ann
 
-### 2️⃣ Create Conda Environment
-
-```bash
-conda create -n churn_env python=3.11 -y
-conda activate churn_env
-```
-
----
-
-### 3️⃣ Install Dependencies
-
-```bash
+# Install dependencies
 pip install -r requirements.txt
-```
 
----
-
-### 4️⃣ Run Streamlit Application
-
-```bash
+# Run app
 streamlit run app.py
 ```
 
-The app will open in your browser where you can input customer details and get churn prediction in real time.
+## 📈 Example Output
 
----
+- Churn probability score
+  
+- Visual gauge indicator
 
-## 🖥️ Deployment
+- Feature impact bar chart
 
-This project includes a Streamlit app for interactive prediction.
+## 🎯 Business Impact
 
-Future deployment options:
-- Render
-- Hugging Face Spaces
-- AWS EC2
-- Docker containerization
+This solution can help organizations:
 
----
+- Identify high-risk customers
 
-## 🔥 Key Highlights
+- Reduce churn rate
 
-- End-to-End Deep Learning Pipeline
-- ANN-based Classification
-- Feature Engineering & Encoding
-- Model Persistence using Pickle
-- Real-Time Prediction via Streamlit
-- Hyperparameter Tuning Notebook Included
+- Improve customer retention strategies
 
----
+- Increase revenue through proactive engagement
 
-## 🚀 Future Enhancements
-
-- Add ROC Curve & Confusion Matrix
-- Perform Cross-Validation
-- Convert to FastAPI backend
-- Add Docker support
-- Implement MLOps pipeline
-
----
 
 ## 👨‍💻 Author
 
